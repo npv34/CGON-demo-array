@@ -28,7 +28,12 @@ function deleteStudent(i) {
 
 // thuc hien chuc nang them moi
 // tao 1 ham ten la addStudent()
-// tao bien value = gia tri cua o input khi nhap vao
-// thuc hien push value vao mang students
-// goi lai ham showListStudent() de hien thi du lieu moi
+function addStudent() {
+    // tao bien value = gia tri cua o input khi nhap vao
+    let value = document.getElementById('name').value;
+    // thuc hien push value vao mang students
+    students.push(value);
+    // goi lai ham showListStudent() de hien thi du lieu moi
+    showListStudent();
+}
 // goi ham addStudent() khi click vao button Add
